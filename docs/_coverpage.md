@@ -1,7 +1,12 @@
+![logo](_public/favicon.ico)
+
 # 闲杂笔记
 
 > 随心所欲记录一些想法...
 
 
+[↓](README.md)
 
-[滚动鼠标](#introduction)
+<!--background-->
+
+![](_media/bg.jpg)

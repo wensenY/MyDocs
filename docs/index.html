@@ -1,32 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
-<!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css">-->
-<!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css">-->
-<!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/pure.css">-->
-<!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">-->
+    <meta charset="UTF-8">
+    <title>闲杂笔记</title>
+    <link href="_public/favicon.ico" rel="icon"/>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+    <meta content="Description" name="description">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
+    <link href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" rel="stylesheet"/>
+    <!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css">-->
+    <!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css">-->
+    <!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/pure.css">-->
+    <!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">-->
 
 
 </head>
 <body>
-  <div id="app"></div>
-  <div id="app">加载中，请稍候...</div>
+<nav>
+    <a href="#/">首页</a>
 
-  <script>
+
+</nav>
+<div id="app">加载中，请稍候...</div>
+
+<script>
     window.$docsify = {
-      name: '',
-      repo: '',
-	  loadSidebar: true,
-	  coverpage: true,
+        name: '闲杂笔记',
+        repo: 'https://github.com/wensenY/MyDocs',
+        onlyCover: true,                                   // 只显示封面
+        // loadSidebar: true,                               // 侧边栏
+        maxLevel: 3,                                        // 最大支持渲染的标题层级
+        coverpage: true,                                    // 封面 _coverpage.md
+        loadNavbar: true,                                   // 导航栏
+        auto2top: true,                                     // 切换页面自动跳转到页面顶部
+        search: {
+            //maxAge: 86400000,                             // 过期时间单位毫秒，默认一天
+            paths: 'auto',
+            placeholder: '搜索',
+            noData: '找不到结果',
+            depth: 4,                                       // 搜索标题的最大程级, 1 - 6
+        }
     }
-  </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+</script>
+<!-- Docsify v4 -->
+<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<!-- 代码高亮 -->
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
+<!-- 全文搜索 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+<!-- 复制到剪贴板 -->
+<script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+<!-- 图片缩放 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 </body>
 </html>
